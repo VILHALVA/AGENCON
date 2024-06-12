@@ -17,7 +17,7 @@ O aplicativo "AGENCON" (Cadastro de Contatos) é uma ferramenta útil para organ
 * **Visualização de detalhes do contato:** Visualize todas as informações de um contato em uma única tela.
 * **Exportação de contatos:** Exporte seus contatos para um arquivo CSV para que você possa importá-los para outro aplicativo ou sistema.
 
-## ## EXECUTANDO O PROJETO:
+## EXECUTANDO O PROJETO:
 1. **Configuração do Banco de Dados:**
    - Antes de executar o app, é necessário importar o arquivo `./DATABASE/DATABASE.sql para o seu banco de Dados Mysql.
 
