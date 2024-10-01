@@ -21,7 +21,7 @@ O aplicativo "AGENCON" (Cadastro de Contatos) é uma ferramenta útil para organ
 1. **Configuração do Banco de Dados:**
    - Antes de executar o app, é necessário importar o arquivo `./DATABASE/DATABASE.sql para o seu banco de Dados Mysql.
 
-2. **Configuração do PHP:**
+2. **Configuração do Java:**
    - Abra o arquivo `CODIGO\src\dao\ConexaoBanco.java` e ajuste as configurações do banco de dados:
 
      ```java
@@ -31,24 +31,19 @@ O aplicativo "AGENCON" (Cadastro de Contatos) é uma ferramenta útil para organ
       private static final String senha = "";
      ```
 
-3. **Executando no NetBeans IDE:**
-   1. **Inicie o NetBeans:**
-      Abra o NetBeans IDE a partir do menu Iniciar (Windows) ou do lançador de aplicativos (macOS).
+3. **Certifique-se de que o projeto esteja compilado:**
+   Antes de executar o projeto, você deve garantir que ele foi compilado corretamente. Navegue até o diretório `./CODIGO`, e use o seguinte comando para compilar:
 
-   2. **Navegue até o Projeto:**
-      No menu superior, clique em "Arquivo" (ou "File" em inglês) e escolha "Abrir Projeto" (ou "Open Project").
+   ```bash
+   mvn clean install
+   ```
 
-   3. **Selecione o Diretório do Projeto:**
-      Navegue até o diretório `CODIGO`, onde está localizado o projeto e selecione a pasta principal. Esta pasta contém o arquivo `pom.xml`.
+4. **Executar o projeto:**
+   Para executar a aplicação Swing com o Maven, usando a classe principal definida no seu `pom.xml`, use o comando:
 
-   4. **Abra o Projeto:**
-      Selecione a pasta do projeto e clique em "Abrir" (ou "Open" em inglês).
-
-   5. **Aguarde a Abertura:**
-      O NetBeans irá carregar o projeto. Isso pode levar alguns momentos, dependendo do tamanho do projeto e da velocidade do seu computador.
-
-   6. **Projeto Aberto:**
-      Uma vez que o projeto é carregado com sucesso, ele aparecerá no painel "Projetos" no canto esquerdo do IDE, e você poderá executa-lo clicando em `Run`.
+   ```bash
+   mvn exec:java
+   ```
 
 ## TECNOLOGIAS USADAS:
 - [LINGUAGEM JAVA:](https://github.com/VILHALVA/CURSO-DE-JAVA) A linguagem de programação Java é amplamente utilizada para o desenvolvimento de aplicativos devido à sua portabilidade, segurança e robustez. Ela é uma escolha popular para desenvolver aplicativos desktop, web e móveis.
